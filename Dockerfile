@@ -15,6 +15,7 @@ RUN curl -o composer-installer.php -fsSL https://getcomposer.org/installer && \
     rm -f composer-installer.php && composer global require wp-cli/wp-cli-bundle
     
 #COPY conf/www.conf /etc/php-fpm.d/www.conf
+COPY conf/php.conf /etc/nginx/conf.d/php.conf
 COPY conf/php-supervisord.ini /etc/supervisord.d/php-supervisord.ini
 
 ENV PATH="~/.composer/vendor/bin:$PATH"
