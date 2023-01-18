@@ -46,6 +46,6 @@ spec:
 
   }
   environment {
-    PHP_VERSION = '7.4'
+    PHP_VERSION = '8.0'
   }
 }
